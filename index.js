@@ -19,7 +19,7 @@ let lobbys = []
 
 const ultradefaultcardpack = {
     ncolors: ["yellow", "red", "green", "blue", "black"],
-    scolors: ["Block", "+2", "Reverse", "cswitch", "+4"],
+    scolors: ["block", "+2", "reverse", "cswitch", "+4"],
     probnormal: 10,
     probblock: 20,
     probreverse: 10,
