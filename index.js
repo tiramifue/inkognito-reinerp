@@ -53,6 +53,7 @@ class Cardpack {
     constructor(colors, spec, pnormal, pblock, preverse, pcolor, pp2, pp4, stack, mustplay, drawtillok, thinktime, startcards, punishmentcards) {
         //Probability must be 100
         this._colors = colors
+        this._spec = spec
         this._normal = pnormal
         this._block = pblock
         this._reverse = preverse
