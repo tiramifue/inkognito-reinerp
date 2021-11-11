@@ -1,0 +1,100 @@
+body {
+    background: black;
+    padding-bottom: 50px;
+    padding-top: 30px;
+    height: 100vh;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    overflow: hidden;
+    min-height: 535px;
+}
+
+@media (max-height: 535px) {
+    body {
+        overflow: auto;
+    }
+}
+
+.lebakas {
+    margin-bottom: 30px;
+}
+
+#outlobbys {
+    overflow: auto;
+    height: 100%;
+    width: 100%;
+}
+
+.lobbynames:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    #outlobbys {
+        font-size: xx-large;
+    }
+    footer {
+        display: none;
+    }
+    body {
+        padding: 0;
+    }
+    .jumbotron {
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 1500px) {
+    #connect {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media (max-width: 1220px) {
+    #connect {
+        padding-left: 4px;
+        padding-right: 4px;
+    }
+}
+
+#rowlobbys {
+    height: 70%;
+}
+
+.custom-scroll::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .6);
+    border-radius: 10px;
+    background-color: #212121;
+}
+
+.custom-scroll::-webkit-scrollbar {
+    width: 12px;
+    background-color: #212121;
+}
+
+.custom-scroll::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .6);
+    background-color: #141414;
+}
+
+.cursor-default {
+    cursor: default;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+#userrow {
+    bottom: 0px;
+}
+
+#connect {
+    right: 10px;
+}

@@ -1,0 +1,14 @@
+#sidebar, #moveto {
+  width: 100px;
+  height: 50px;
+  background: #000;
+}
+
+body {
+  padding-top: 500px;
+}
+
+#moveto {
+  margin-top: -300px;
+  background: red;
+}

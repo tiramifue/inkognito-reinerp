@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>JUNO</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="../node_modules/mdbootstrap/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="../node_modules/mdbootstrap/css/mdb.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="../node_modules/mdbootstrap/css/addons/datatables-select.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../node_modules/mdbootstrap/css/addons/datatables.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../node_modules/mdbootstrap/css/addons/directives.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../node_modules/mdbootstrap/css/addons/flag.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../node_modules/mdbootstrap/css/addons/jquery.zmd.hierarchical-display.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../node_modules/mdbootstrap/css/addons/rating.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../node_modules/mdbootstrap/css/modules/animations-extended.min.css"
+    />
+    <link rel="stylesheet" href="cssgame.css" />
+  </head>
+
+  <body class="d-flex align-items-stretch">
+    <div class="container-fluid">
+      <div class="row d-flex justify-content-center">
+        <!-- Central Modal Medium Info -->
+        <div
+          class="modal fade"
+          id="centralModalInfo"
+          tabindex="-1"
+          role="dialog"
+          aria-labelledby="myModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered modal-notify" role="document">
+            <!--Content-->
+            <div class="modal-content elegant-color-dark">
+              <!--Header-->
+              <div
+                class="modal-header elegant-color d-flex justify-content-center"
+              >
+                <p class="heading lead">Choose a color</p>
+              </div>
+
+              <!--Body-->
+              <div class="modal-body">
+                <div class="row d-flex justify-content-center">
+                  <button id="red" class="btn btn-outline-danger w-30 spselect">
+                    red
+                  </button>
+                  <button
+                    id="blue"
+                    class="btn btn-outline-primary w-30 spselect"
+                  >
+                    blue
+                  </button>
+                </div>
+                <div class="row d-flex justify-content-center">
+                  <button
+                    id="yellow"
+                    class="btn btn-outline-warning w-30 spselect"
+                  >
+                    yellow
+                  </button>
+                  <button
+                    id="green"
+                    class="btn btn-outline-success w-30 spselect"
+                  >
+                    green
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!--/.Content-->
+          </div>
+        </div>
+        <!-- Central Modal Medium Info-->
+
+
+        <!-- Players -->
+
+        <!-- Full Height Modal Left -->
+        <div
+          class="modal fade left"
+          id="playersmodal"
+          tabindex="-1"
+          role="dialog"
+          aria-labelledby="myModalLabel"
+          aria-hidden="true"
+          data-backdrop="false"
+        >
+          <!-- Add class .modal-full-height and then add class .modal-right (or other classes from list above) to set a position to the modal -->
+          <div
+            id="playerscol"
+            class="modal-dialog modal-side modal-full-height modal-left"
+            role="document"
+          >
+            <div class="modal-content elegant-color">
+              <div class="modal-header">
+                <h4
+                  class="modal-title w-100 text-white d-flex justify-content-center"
+                  id="myModalLabel"
+                >
+                  Players
+                </h4>
+                <button
+                  id="closeplayers"
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span class="text-white" aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body text-white">
+                <div id="playerscontent"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Full Height Modal Left -->
+
+        <!-- Game -->
+        <div id="gamecol" class="col-12 col-xl-6 col-lg-10 animated fadeIn full-height">
+          <div id="gamecard" class="card elegant-color-dark">
+            <div class="card-body">
+              <h1 class="card-title white-text d-flex justify-content-center">
+                Game<button
+                  id="readybutton"
+                  class="btn btn-light btn-sm rounded-pill"
+                >
+                  Not ready
+                </button>
+              </h1>
+              <div
+                id="outd2"
+                class="font-weight-bold d-flex justify-content-center mt-5 mb-3"
+              ></div>
+              <div id="gamecontent" class="align-bottom">
+                <div
+                  id="outd1"
+                  class="row d-flex justify-content-left p-0 m-0 mt-2"
+                ></div>
+              </div>
+
+              <div class="row d-flex justify-content-center">
+                <button id="draw" class="btn btn-danger">Draw</button>
+                <button id="uno" class="btn btn-info">UNO!</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Chat -->
+
+        <!-- Full Height Modal Right -->
+        <div
+          class="modal fade right"
+          id="chatmodal"
+          tabindex="-1"
+          role="dialog"
+          aria-labelledby="myModalLabel"
+          aria-hidden="true"
+          data-backdrop="false"
+        >
+          <!-- Add class .modal-full-height and then add class .modal-right (or other classes from list above) to set a position to the modal -->
+          <div
+            class="modal-dialog modal-side modal-full-height modal-right"
+            role="document"
+          >
+            <div class="modal-content elegant-color">
+              <div class="modal-header">
+                <h4
+                  class="modal-title w-100 text-white d-flex justify-content-center"
+                  id="myModalLabel"
+                >
+                  Chat
+                </h4>
+                <button
+                  id="closechat"
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span class="text-white" aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body text-white">
+                <div class="card elegant-color-dark">
+                  <div class="card-body">
+                    <div id="chatcontent"></div>
+                    <div class="md-form md-outline">
+                      <input
+                        type="text"
+                        id="chat"
+                        class="form-control white-text"
+                        placeholder="Type something..."
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Full Height Modal Right -->
+
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="futter" class="page-footer font-small elegant-color-dark fixed-bottom">
+      <div class="footer-copyright text-center py-3">
+        <a class="white-text animated fadeIn">© 2020 P&P</a>
+      </div>
+    </footer>
+
+    <script src="../node_modules/mdbootstrap/js/jquery.min.js"></script>
+    <script src="../node_modules/mdbootstrap/js/jquery-ui.min.js"></script>
+    <script src="../node_modules/mdbootstrap/js/popper.min.js"></script>
+    <script src="../node_modules/mdbootstrap/js/bootstrap.min.js"></script>
+    <script src="../node_modules/mdbootstrap/js/mdb.min.js"></script>
+    <script src="../node_modules/mdbootstrap/js/modules/animations-extended.min.js"></script>
+    <script src="../node_modules/mdbootstrap/js/modules/forms-free.min.js"></script>
+    <script src="../node_modules/mdbootstrap/js/modules/scrolling-navbar.min.js"></script>
+    <script src="../node_modules/mdbootstrap/js/modules/treeview.min.js"></script>
+    <script src="../node_modules/mdbootstrap/js/modules/wow.min.js"></script>
+    <script src="../node_modules/mdbootstrap/js/addons/datatables-select.min.js"></script>
+    <script src="../node_modules/mdbootstrap/js/addons/datatables.min.js"></script>
+    <script src="../node_modules/mdbootstrap/js/addons/directives.min.js"></script>
+    <script src="../node_modules/mdbootstrap/js/addons/flag.min.js"></script>
+    <script src="../node_modules/mdbootstrap/js/addons/imagesloaded.pkgd.min.js"></script>
+    <script src="../node_modules/mdbootstrap/js/addons/jquery.zmd.hierarchical-display.min.js"></script>
+    <script src="../node_modules/mdbootstrap/js/addons/masonry.pkgd.min.js"></script>
+    <script src="../node_modules/mdbootstrap/js/addons/rating.min.js"></script>
+    <script src="../socket.io/socket.io.js"></script>
+    <script src="jsgame.js"></script>
+  </body>
+</html>

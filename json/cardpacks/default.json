@@ -1,0 +1,28 @@
+{
+  "ncolors": [
+    "yellow",
+    "red",
+    "green",
+    "blue",
+    "black"
+  ],
+  "scolors": [
+    "Block",
+    "+2",
+    "Reverse",
+    "cswitch",
+    "+4"
+  ],
+  "probnormal": 45,
+  "probblock": 15,
+  "probreverse": 15,
+  "probcolor": 10,
+  "probp2": 10,
+  "probp4": 5,
+  "grustack": true,
+  "grumustplay": true,
+  "grudrawtillok": true,
+  "thinktime": 2000000, 
+  "startcards": 7,
+  "punishmentcards": 2
+}

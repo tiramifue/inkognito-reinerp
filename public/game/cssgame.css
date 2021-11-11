@@ -1,0 +1,97 @@
+body {
+  position: relative;
+  z-index: 0;
+  background: black;
+  padding-bottom: 70px;
+  padding-top: 30px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  height: 100vh;
+  width: 100%;
+}
+
+.lebakas {
+  margin-bottom: 3%;
+}
+
+#outd1 {
+  position: relative;
+  z-index: 501;
+}
+
+#outd2 {
+  height: 200px;
+  position: relative;
+  z-index: 1;
+}
+
+.temphov {
+  position: relative;
+  z-index: 502;
+}
+
+#gamecontent {
+  position: relative;
+  z-index: 500;
+  height: 400px;
+  overflow: auto;
+}
+
+.md-form {
+  margin: 0px;
+  margin-top: 20px;
+}
+
+#uno {
+  display: none;
+}
+
+#readybutton {
+  margin-left: 20px;
+  display: none;
+  transition: .3s;
+}
+
+.w-30 {
+  width: 30%;
+}
+
+.zoom {
+  transition: transform .2s;
+}
+
+.zoom:hover {
+  transform: scale(1.1);
+}
+
+.hov:hover {
+  cursor: pointer;
+}
+
+.nhov:hover {
+  cursor: not-allowed;
+}
+
+#futter {
+  z-index: 1000000;
+}
+
+z-100000 {
+  z-index: 100000;
+}
+
+z-100 {
+  z-index: 100;
+}
+
+.modal-body {
+  overflow: auto;
+}
+
+#c {
+  height: 100%;
+}

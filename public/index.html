@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>JUNO - Lobby</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+    <link rel="stylesheet" href="node_modules/mdbootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="node_modules/mdbootstrap/css/mdb.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+    <link rel="stylesheet" href="node_modules/mdbootstrap/css/addons/datatables-select.min.css" />
+    <link rel="stylesheet" href="node_modules/mdbootstrap/css/addons/datatables.min.css" />
+    <link rel="stylesheet" href="node_modules/mdbootstrap/css/addons/directives.min.css" />
+    <link rel="stylesheet" href="node_modules/mdbootstrap/css/addons/flag.min.css" />
+    <link rel="stylesheet" href="node_modules/mdbootstrap/css/addons/jquery.zmd.hierarchical-display.min.css" />
+    <link rel="stylesheet" href="node_modules/mdbootstrap/css/addons/rating.min.css" />
+    <link rel="stylesheet" href="node_modules/mdbootstrap/css/modules/animations-extended.min.css" />
+    <link rel="stylesheet" href="cssindex.css" />
+</head>
+
+<body class="d-flex justify-content-center custom-scroll">
+    <div class="jumbotron elegant-color-dark col-lg-7 col-md-10 pr-3">
+        <div class="row d-flex justify-content-center lebakas animated zoomIn">
+            <h2 class="h1 white-text">Lobby selection</h2>
+        </div>
+        <div id="rowlobbys" class="row lebakas animated zoomIn">
+            <h2 id="outlobbys" class="white-text pr-2 pl-2 custom-scroll"></h2>
+        </div>
+
+        <div id="userrow" class="row d-flex align-items-baseline position-absolute w-100">
+            <div class="col-10">
+                <div id="usrinput" class="md-form md-outline animated fast">
+                    <i class="fas fa-user prefix white-text"></i>
+                    <input type="text" id="name" class="form-control white-text" placeholder="Username" />
+                </div>
+            </div>
+            <div class="col-2 d-flex align-items-center justify-content-center p-0">
+                <button id="connect" type="button" class="btn blue-gradient white-text">Connect</button>
+            </div>
+        </div>
+
+    </div>
+
+    <footer class="page-footer font-small elegant-color-dark fixed-bottom">
+        <div class="footer-copyright text-center py-3">
+            <a class="white-text animated fadeInUp">© 2020 P&P</a>
+        </div>
+    </footer>
+
+    <script src="node_modules/mdbootstrap/js/jquery.min.js"></script>
+    <script src="node_modules/mdbootstrap/js/jquery-ui.min.js"></script>
+    <script src="node_modules/mdbootstrap/js/popper.min.js"></script>
+    <script src="node_modules/mdbootstrap/js/bootstrap.min.js"></script>
+    <script src="node_modules/mdbootstrap/js/mdb.min.js"></script>
+    <script src="node_modules/mdbootstrap/js/modules/animations-extended.min.js"></script>
+    <script src="node_modules/mdbootstrap/js/modules/forms-free.min.js"></script>
+    <script src="node_modules/mdbootstrap/js/modules/scrolling-navbar.min.js"></script>
+    <script src="node_modules/mdbootstrap/js/modules/treeview.min.js"></script>
+    <script src="node_modules/mdbootstrap/js/modules/wow.min.js"></script>
+    <script src="node_modules/mdbootstrap/js/addons/datatables-select.min.js"></script>
+    <script src="node_modules/mdbootstrap/js/addons/datatables.min.js"></script>
+    <script src="node_modules/mdbootstrap/js/addons/directives.min.js"></script>
+    <script src="node_modules/mdbootstrap/js/addons/flag.min.js"></script>
+    <script src="node_modules/mdbootstrap/js/addons/imagesloaded.pkgd.min.js"></script>
+    <script src="node_modules/mdbootstrap/js/addons/jquery.zmd.hierarchical-display.min.js"></script>
+    <script src="node_modules/mdbootstrap/js/addons/masonry.pkgd.min.js"></script>
+    <script src="node_modules/mdbootstrap/js/addons/rating.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="jsindex.js"></script>
+</body>
+
+</html>
